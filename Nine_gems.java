@@ -18,7 +18,7 @@ import java.util.ArrayDeque;
 
 public class Nine_gems {
     public static void main(String[] args) {
-        position(0);
+        position(0); // calling the position method
     }
 
     public static void position(int n) {
@@ -31,7 +31,7 @@ public class Nine_gems {
         adq.offer('L');
         adq.offer('D');
         for (int i = 1; i <= n; i++) {
-            char k = adq.poll();
+            char k = adq.poll(); // pulling out the first element in the queue
             if (k == 'R') {
                 x = x + (d * i);
             } else if (k == 'U') {
@@ -41,7 +41,7 @@ public class Nine_gems {
             } else if (k == 'D') {
                 y = y - (d * i);
             }
-            adq.offer(k);
+            adq.offer(k); // adding the eliment again at the end of the queue
         }
         System.out.println("X:" + x + " " + "Y:" + y);
     }
