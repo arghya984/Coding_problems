@@ -41,7 +41,7 @@ public class Nine_gems {
             } else if (k == 'D') {
                 y = y - (d * i);
             }
-            adq.offer(k); // adding the eliment again at the end of the queue
+            adq.offer(k); // adding the element again at the end of the queue
         }
         System.out.println("X:" + x + " " + "Y:" + y);
     }
